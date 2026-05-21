@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberNews Today</title>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #111827;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            height: 350px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        main {
+            width: 90%;
+            margin: 30px auto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        section {
+            display: grid;
+            gap: 20px;
+        }
+
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        article h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        article p {
+            line-height: 1.6;
+        }
+
+        aside {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+
+        aside h3 {
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .category {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>CyberNews Today</h1>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#teknologi">Teknologi</a></li>
+                <li><a href="#cyber">Cyber Security</a></li>
+                <li><a href="#ai">AI</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h2>
+            Portal Berita Teknologi dan Cyber Security Terbaru
+        </h2>
+
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section>
+
+            <!-- CYBER SECURITY -->
+            <article id="cyber">
+
+                <span class="category">Cyber Security</span>
+
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80" alt="Cyber Security">
+
+                <h3>Peningkatan Serangan Siber di Tahun 2026</h3>
+
+                <p>
+                    Serangan siber mengalami peningkatan signifikan akibat berkembangnya teknologi digital dan penggunaan cloud computing di berbagai sektor industri.
+                </p>
+
+            </article>
+
+            <!-- AI -->
+            <article id="ai">
+
+                <span class="category">Artificial Intelligence</span>
+
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80" alt="Artificial Intelligence">
+
+                <h3>AI Membantu Otomatisasi Sistem Keamanan</h3>
+
+                <p>
+                    Teknologi Artificial Intelligence mulai digunakan untuk mendeteksi ancaman keamanan secara otomatis dan meningkatkan efisiensi monitoring sistem.
+                </p>
+
+            </article>
+
+            <!-- TEKNOLOGI -->
+            <article id="teknologi">
+
+                <span class="category">Teknologi</span>
+
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80" alt="Teknologi">
+
+                <h3>Perkembangan Cloud Computing Semakin Pesat</h3>
+
+                <p>
+                    Banyak perusahaan mulai melakukan migrasi sistem ke cloud untuk meningkatkan fleksibilitas dan efisiensi operasional.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside>
+
+            <h3>Berita Populer</h3>
+
+            <ul>
+                <li>• Bahaya Phishing pada Email Perusahaan</li>
+                <li>• Tips Membuat Password yang Aman</li>
+                <li>• Perkembangan Teknologi AI di Dunia</li>
+                <li>• Pentingnya Backup Data Secara Berkala</li>
+                <li>• Ancaman Malware pada Perangkat Mobile</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+
+        <p>&copy; 2026 CyberNews Today - Semantic Web Project</p>
+
+        <p>Email: cybernews@email.com</p>
+
+    </footer>
+
+</body>
+</html>
